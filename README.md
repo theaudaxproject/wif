@@ -1,29 +1,27 @@
 # WIF
-[![TRAVIS](https://secure.travis-ci.org/bitcoinjs/wif.png)](http://travis-ci.org/bitcoinjs/wif)
-[![NPM](http://img.shields.io/npm/v/wif.svg)](https://www.npmjs.org/package/wif)
+[![NPM](http://img.shields.io/npm/v/wif-smart.svg)](https://www.npmjs.org/package/wif-smart)
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-Bitcoin Wallet Import Format encoding/decoding module.
+SmartCash Wallet Import Format encoding/decoding module.
 
 
 ## Example
 
 ``` javascript
-var wif = require('wif')
+var wifsmart = require('wif-smart')
 var privateKey = new Buffer('0000000000000000000000000000000000000000000000000000000000000001', 'hex')
-var key = wif.encode(128, privateKey, true)
-// => KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn
+var key = wifsmart.encode(191, privateKey, true)
+// => VFkSCpppSMzG7qXidUPa4F52XzNbSvnr6NytsmB5nPwwnj37EbQ1
 
-var obj = wif.decode(key)
+var obj = wifsmart.decode(key)
 // => {
-//	version: 128,
+//	version: 191,
 //	privateKey: <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01>,
 //	compressed: true
 //}
 
-wif.encode(obj)
-// => KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn
+wifsmart.encode(obj)
+// => VFkSCpppSMzG7qXidUPa4F52XzNbSvnr6NytsmB5nPwwnj37EbQ1
 ```
 
 ## LICENSE [MIT](LICENSE)
