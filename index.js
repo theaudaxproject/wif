@@ -1,4 +1,4 @@
-var bs58smartcheck = require('bs58smartcheck')
+var bs58swiftcheck = require('bs58swiftcheck')
 
 function decodeRaw (buffer, version) {
   // check version only if defined
@@ -40,13 +40,13 @@ function encodeRaw (version, privateKey, compressed) {
 }
 
 function decode (string, version) {
-  return decodeRaw(bs58smartcheck.decode(string), version)
+  return decodeRaw(bs58swiftcheck.decode(string), version)
 }
 
 function encode (version, privateKey, compressed) {
-  if (typeof version === 'number') return bs58smartcheck.encode(encodeRaw(version, privateKey, compressed))
+  if (typeof version === 'number') return bs58swiftcheck.encode(encodeRaw(version, privateKey, compressed))
 
-  return bs58smartcheck.encode(
+  return bs58swiftcheck.encode(
     encodeRaw(
       version.version,
       version.privateKey,

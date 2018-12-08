@@ -1,22 +1,22 @@
 {
-  "name": "wif-smart",
-  "version": "2.0.0",
-  "description": "SmartCash Wallet Import Format (WIF) decoding/encoding module",
-  "author": "SmartCash Developers",
+  "name": "wif-swift",
+  "version": "1.0.0",
+  "description": "SwiftCash Wallet Import Format (WIF) decoding/encoding module",
+  "author": "SwiftCash Developers",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SmartCash/wif.git"
+    "url": "https://github.com/swiftcashproject/wif.git"
   },
   "bugs": {
-    "url": "https://github.com/SmartCash/wif/issues"
+    "url": "https://github.com/swiftcashproject/wif/issues"
   },
-  "homepage": "https://github.com/SmartCash/wif",
+  "homepage": "https://github.com/SwiftCash/wif",
   "keywords": [
-    "smartcash",
+    "swiftcash",
     "base58",
     "base58check",
-    "base58smartcheck",
+    "base58swiftcheck",
     "decode",
     "decoding",
     "encoding",
@@ -24,10 +24,10 @@
     "key",
     "private",
     "wif",
-    "wif-smart"
+    "wif-swift"
   ],
   "main": "index.js",
   "dependencies": {
-    "bs58smartcheck": "^2.0.4"
+    "bs58swiftcheck": "^1.0.0"
   }
 }
