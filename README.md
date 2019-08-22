@@ -1,26 +1,26 @@
 # WIF
-[![NPM](http://img.shields.io/npm/v/wif-swift.svg)](https://www.npmjs.org/package/wif-swift)
+[![NPM](http://img.shields.io/npm/v/wif-audax.svg)](https://www.npmjs.org/package/wif-audax)
 
 
-SwiftCash Wallet Import Format encoding/decoding module.
+Audax Wallet Import Format encoding/decoding module.
 
 
 ## Example
 
 ``` javascript
-var wifswift = require('wif-swift')
+var wifaudax = require('wif-audax')
 var privateKey = new Buffer('0000000000000000000000000000000000000000000000000000000000000001', 'hex')
-var key = wifswift.encode(191, privateKey, true)
+var key = wifaudax.encode(142, privateKey, true)
 // => VFkSCpppSMzG7qXidUPa4F52XzNbSvnr6NytsmB5nPwwnj37EbQ1
 
-var obj = wifswift.decode(key)
+var obj = wifaudax.decode(key)
 // => {
-//	version: 191,
+//	version: 142,
 //	privateKey: <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01>,
 //	compressed: true
 //}
 
-wifswift.encode(obj)
+wifaudax.encode(obj)
 // => VFkSCpppSMzG7qXidUPa4F52XzNbSvnr6NytsmB5nPwwnj37EbQ1
 ```
 

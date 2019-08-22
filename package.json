@@ -1,22 +1,22 @@
 {
-  "name": "wif-swift",
+  "name": "wif-audax",
   "version": "1.0.0",
-  "description": "SwiftCash Wallet Import Format (WIF) decoding/encoding module",
-  "author": "SwiftCash Developers",
+  "description": "Audax Wallet Import Format (WIF) decoding/encoding module",
+  "author": "Audax Developers",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swiftcashproject/wif.git"
+    "url": "https://github.com/theaudaxproject/wif.git"
   },
   "bugs": {
-    "url": "https://github.com/swiftcashproject/wif/issues"
+    "url": "https://github.com/theaudaxproject/wif/issues"
   },
-  "homepage": "https://github.com/SwiftCash/wif",
+  "homepage": "https://github.com/theaudaxproject/wif",
   "keywords": [
-    "swiftcash",
+    "audax",
     "base58",
     "base58check",
-    "base58swiftcheck",
+    "base58audaxcheck",
     "decode",
     "decoding",
     "encoding",
@@ -24,10 +24,10 @@
     "key",
     "private",
     "wif",
-    "wif-swift"
+    "wif-audax"
   ],
   "main": "index.js",
   "dependencies": {
-    "bs58swiftcheck": "^1.0.0"
+    "bs58audaxcheck": "^1.0.0"
   }
 }

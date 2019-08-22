@@ -1,4 +1,4 @@
-var bs58swiftcheck = require('bs58swiftcheck')
+var bs58audaxcheck = require('bs58audaxcheck')
 
 function decodeRaw (buffer, version) {
   // check version only if defined
@@ -40,13 +40,13 @@ function encodeRaw (version, privateKey, compressed) {
 }
 
 function decode (string, version) {
-  return decodeRaw(bs58swiftcheck.decode(string), version)
+  return decodeRaw(bs58audaxcheck.decode(string), version)
 }
 
 function encode (version, privateKey, compressed) {
-  if (typeof version === 'number') return bs58swiftcheck.encode(encodeRaw(version, privateKey, compressed))
+  if (typeof version === 'number') return bs58audaxcheck.encode(encodeRaw(version, privateKey, compressed))
 
-  return bs58swiftcheck.encode(
+  return bs58audaxcheck.encode(
     encodeRaw(
       version.version,
       version.privateKey,
